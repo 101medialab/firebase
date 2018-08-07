@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/101medialab/firebase-go-sdk-extended/internal"
+	"github.com/101medialab/firebase/internal/internal"
 
 	"net/url"
 

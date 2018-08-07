@@ -24,7 +24,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/101medialab/firebase-go-sdk-extended/internal"
+	"github.com/101medialab/firebase/internal"
 	"google.golang.org/api/identitytoolkit/v3"
 	"google.golang.org/api/transport"
 )

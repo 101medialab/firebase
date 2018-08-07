@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package db // import "github.com/101medialab/firebase-go-sdk-extended/db"
+package db // import "github.com/101medialab/firebase/db"
 
 import (
 	"encoding/json"
@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/101medialab/firebase-go-sdk-extended/internal"
+	"github.com/101medialab/firebase/internal"
 
 	"golang.org/x/net/context"
 )

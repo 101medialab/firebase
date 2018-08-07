@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/101medialab/firebase-go-sdk-extended/internal"
+	"github.com/101medialab/firebase/internal/internal"
 
 	"golang.org/x/net/context"
 )

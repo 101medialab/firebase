@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package storage provides functions for accessing Google Cloud Storge buckets.
-package storage // import "github.com/101medialab/firebase-go-sdk-extended/storage"
+package storage // import "github.com/101medialab/firebase/storage"
 
 import (
 	"errors"
@@ -21,7 +21,7 @@ import (
 	"golang.org/x/net/context"
 
 	"cloud.google.com/go/storage"
-	"github.com/101medialab/firebase-go-sdk-extended/internal"
+	"github.com/101medialab/firebase/internal"
 )
 
 // Client is the interface for the Firebase Storage service.

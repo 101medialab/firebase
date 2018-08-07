@@ -14,7 +14,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package auth // import "github.com/101medialab/firebase-go-sdk-extended/auth"
+package auth // import "github.com/101medialab/firebase/auth"
 
 import "golang.org/x/net/context"
 

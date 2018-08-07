@@ -15,7 +15,7 @@
 // Package firebase is the entry point to the Firebase Admin SDK. It provides functionality for initializing App
 // instances, which serve as the central entities that provide access to various other Firebase services exposed
 // from the SDK.
-package firebase_go_sdk_extended // import "firebase.google.com/go"
+package firebase // import "firebase.google.com/go"
 
 import (
 	"encoding/json"
@@ -27,12 +27,12 @@ import (
 
 	"cloud.google.com/go/firestore"
 
-	"github.com/101medialab/firebase-go-sdk-extended/auth"
-	"github.com/101medialab/firebase-go-sdk-extended/db"
-	"github.com/101medialab/firebase-go-sdk-extended/iid"
-	"github.com/101medialab/firebase-go-sdk-extended/internal"
-	"github.com/101medialab/firebase-go-sdk-extended/messaging"
-	"github.com/101medialab/firebase-go-sdk-extended/storage"
+	"github.com/101medialab/firebase/auth"
+	"github.com/101medialab/firebase/db"
+	"github.com/101medialab/firebase/iid"
+	"github.com/101medialab/firebase/internal"
+	"github.com/101medialab/firebase/messaging"
+	"github.com/101medialab/firebase/storage"
 
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
