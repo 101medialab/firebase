@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package iid contains functions for deleting instance IDs from Firebase projects.
-package iid // import "github.com/101medialab/firebase/iid"
+package iid
 
 import (
 	"errors"

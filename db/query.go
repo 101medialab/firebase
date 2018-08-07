@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package db // import "github.com/101medialab/firebase/db"
+package db
 
 import (
 	"encoding/json"

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package storage provides functions for accessing Google Cloud Storge buckets.
-package storage // import "github.com/101medialab/firebase/storage"
+package storage
 
 import (
 	"errors"

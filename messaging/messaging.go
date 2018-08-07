@@ -14,7 +14,7 @@
 
 // Package messaging contains functions for sending messages and managing
 // device subscriptions with Firebase Cloud Messaging (FCM).
-package messaging // import "github.com/101medialab/firebase/messaging"
+package messaging
 
 import (
 	"encoding/json"
@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/101medialab/firebase/internal/internal"
+	"github.com/101medialab/firebase/internal"
 	"golang.org/x/net/context"
 
 	"google.golang.org/api/transport"

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package internal contains functionality that is only accessible from within the Admin SDK.
-package internal // import "github.com/101medialab/firebase/internal"
+package internal
 
 import (
 	"fmt"

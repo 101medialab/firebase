@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/101medialab/firebase/internal/internal"
+	"github.com/101medialab/firebase/internal"
 
 	"net/url"
 
