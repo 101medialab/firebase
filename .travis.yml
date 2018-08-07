@@ -16,7 +16,7 @@ matrix:
   # Mark the build finished if tests pass on other versions of Go.
   fast_finish: true
 
-go_import_path: firebase.google.com/go
+go_import_path: github.com/101medialab/firebase
 
 before_install:
     # Golint requires Go 1.7 or later.
