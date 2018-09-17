@@ -222,9 +222,9 @@ type AndroidNotification struct {
 // See https://tools.ietf.org/html/rfc8030#section-5 for additional details, and supported
 // headers.
 type WebpushConfig struct {
-	Headers      map[string]string    `json:"headers,omitempty"`
-	Data         map[string]string    `json:"data,omitempty"`
-	Notification *WebpushNotification `json:"notification,omitempty"`
+	Headers      map[string]string      `json:"headers,omitempty"`
+	Data         map[string]interface{} `json:"data,omitempty"`
+	Notification *WebpushNotification   `json:"notification,omitempty"`
 }
 
 // WebpushNotification is a notification to send via WebPush protocol.
