@@ -138,14 +138,14 @@ type Client struct {
 // fields. See https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages for more
 // details on how the backend FCM servers handle different message parameters.
 type Message struct {
-	Data         map[string]interface{} `json:"data,omitempty"`
-	Notification *Notification          `json:"notification,omitempty"`
-	Android      *AndroidConfig         `json:"android,omitempty"`
-	Webpush      *WebpushConfig         `json:"webpush,omitempty"`
-	APNS         *APNSConfig            `json:"apns,omitempty"`
-	Token        string                 `json:"token,omitempty"`
-	Topic        string                 `json:"-"`
-	Condition    string                 `json:"condition,omitempty"`
+	Data         map[string]string `json:"data,omitempty"`
+	Notification *Notification     `json:"notification,omitempty"`
+	Android      *AndroidConfig    `json:"android,omitempty"`
+	Webpush      *WebpushConfig    `json:"webpush,omitempty"`
+	APNS         *APNSConfig       `json:"apns,omitempty"`
+	Token        string            `json:"token,omitempty"`
+	Topic        string            `json:"-"`
+	Condition    string            `json:"condition,omitempty"`
 }
 
 // MarshalJSON marshals a Message into JSON (for internal use only).
@@ -170,12 +170,12 @@ type Notification struct {
 
 // AndroidConfig contains messaging options specific to the Android platform.
 type AndroidConfig struct {
-	CollapseKey           string                 `json:"collapse_key,omitempty"`
-	Priority              string                 `json:"priority,omitempty"` // one of "normal" or "high"
-	TTL                   *time.Duration         `json:"-"`
-	RestrictedPackageName string                 `json:"restricted_package_name,omitempty"`
-	Data                  map[string]interface{} `json:"data,omitempty"` // if specified, overrides the Data field on Message type
-	Notification          *AndroidNotification   `json:"notification,omitempty"`
+	CollapseKey           string               `json:"collapse_key,omitempty"`
+	Priority              string               `json:"priority,omitempty"` // one of "normal" or "high"
+	TTL                   *time.Duration       `json:"-"`
+	RestrictedPackageName string               `json:"restricted_package_name,omitempty"`
+	Data                  map[string]string    `json:"data,omitempty"` // if specified, overrides the Data field on Message type
+	Notification          *AndroidNotification `json:"notification,omitempty"`
 }
 
 // MarshalJSON marshals an AndroidConfig into JSON (for internal use only).
@@ -222,9 +222,9 @@ type AndroidNotification struct {
 // See https://tools.ietf.org/html/rfc8030#section-5 for additional details, and supported
 // headers.
 type WebpushConfig struct {
-	Headers      map[string]string      `json:"headers,omitempty"`
-	Data         map[string]interface{} `json:"data,omitempty"`
-	Notification *WebpushNotification   `json:"notification,omitempty"`
+	Headers      map[string]string    `json:"headers,omitempty"`
+	Data         map[string]string    `json:"data,omitempty"`
+	Notification *WebpushNotification `json:"notification,omitempty"`
 }
 
 // WebpushNotification is a notification to send via WebPush protocol.
